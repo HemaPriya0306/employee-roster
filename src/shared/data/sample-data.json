@@ -1,0 +1,153 @@
+{
+    "companyInfo": {
+        "companyName": "Tromp, Bosco and Morgan",
+        "companyMotto": "user-centric integrate e-business",
+        "companyEst": "2023-03-17T04:53:41.965Z"
+    },
+    "employees": [
+        {
+            "id": "0b7e4196-1ce5-4988-93af-8a4770834fc6",
+            "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/sainraja/128.jpg",
+            "firstName": "Luke",
+            "lastName": "Stokes",
+            "jobTitle": "Investor Security Liaison",
+            "contactNo": "0446 587 754",
+            "address": "Sarah Island South Alexandramouth, Northern Territory",
+            "age": 52,
+            "bio": "Recusandae nulla dolorem amet sapiente deleniti voluptate eveniet in autem. Veritatis numquam ut rerum deleniti. Eum porro est est necessitatibus et est. Animi atque est placeat. In aut non. Et ullam voluptas aut soluta est veniam vero.",
+            "dateJoined": "2018-01-15T10:01:38.592Z"
+        },
+        {
+            "id": "04a2d3cd-a972-498e-9f75-2e0502597f33",
+            "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/vigobronx/128.jpg",
+            "firstName": "Mia",
+            "lastName": "Nicolas",
+            "jobTitle": "Global Web Architect",
+            "contactNo": "0497 459 232",
+            "address": "James Mews Kuhlmanburgh, Northern Territory",
+            "age": 34,
+            "bio": "Veniam dolores dolor eaque corporis. Ratione corporis incidunt aliquam dolore et ipsa nisi. Eligendi dolor quo eligendi at. Sunt sint nesciunt deleniti a. Maiores magni est et nihil sint adipisci et odit. Sunt et occaecati et.",
+            "dateJoined": "2024-08-02T02:34:58.491Z"
+        },
+        {
+            "id": "c4a2de1d-3b2b-4792-b8b0-251a5a49f6a6",
+            "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/mateaodviteza/128.jpg",
+            "firstName": "Poppy",
+            "lastName": "Rodriguez",
+            "jobTitle": "Global Configuration Engineer",
+            "contactNo": "0478 388 302",
+            "address": "Hannah Station St East Claudia, Tasmania",
+            "age": 21,
+            "bio": "Aut odio eos. Autem quaerat minima est quisquam tempore qui error. Nobis ipsum et sit laborum eius aperiam aperiam qui dolor.",
+            "dateJoined": "2024-12-31T05:38:53.459Z"
+        },
+        {
+            "id": "0288ede6-d001-43a0-b0c8-b41134757ab0",
+            "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/kurafire/128.jpg",
+            "firstName": "Hunter",
+            "lastName": "Kris",
+            "jobTitle": "Customer Accountability Designer",
+            "contactNo": "0492 116 216",
+            "address": "Barrows Circuit West Henry, Western Australia",
+            "age": 38,
+            "bio": "Eaque molestiae rem facilis. Et sed necessitatibus dolores non. Voluptatem totam fugit minus nulla soluta voluptates. Suscipit dolorem similique perferendis animi animi tempora nemo et blanditiis. Tempora qui quibusdam ut fugit nam amet quidem. Atque quam est distinctio optio dolorem consectetur non aut.",
+            "dateJoined": "2024-04-10T01:23:40.004Z"
+        },
+        {
+            "id": "5987f57d-ab05-4d06-89d7-01fbf4fca5aa",
+            "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/adamnac/128.jpg",
+            "firstName": "Luke",
+            "lastName": "Hayes",
+            "jobTitle": "Legacy Web Coordinator",
+            "contactNo": "0416 406 847",
+            "address": "Ferry Ridge Andrewshire, Queensland",
+            "age": 17,
+            "bio": "Corrupti at sed ducimus velit qui quod minus laudantium. Quis voluptatem fugiat officiis porro quia rerum quaerat cum est. Quia sunt necessitatibus dignissimos voluptatem est. Placeat ducimus illum corporis quidem voluptas reiciendis. Necessitatibus recusandae eaque provident tempore possimus qui quia. Labore eos aspernatur voluptas qui quia aut perspiciatis.",
+            "dateJoined": "2022-02-28T10:58:56.690Z"
+        },
+        {
+            "id": "5966a2a2-eba0-4719-8206-295848567615",
+            "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/guischmitt/128.jpg",
+            "firstName": "Hugo",
+            "lastName": "Donnelly",
+            "jobTitle": "Legacy Paradigm Specialist",
+            "contactNo": "0479 929 019",
+            "address": "Phoebe Lane South Lincolnmouth, Australian Capital Territory",
+            "age": 21,
+            "bio": "Ipsum eum voluptatibus dolor excepturi. Tenetur occaecati eaque enim. Dolores voluptatem ut et dignissimos. Numquam iste a error quisquam. Odio perferendis corrupti quidem consequatur.",
+            "dateJoined": "2023-08-21T12:09:14.239Z"
+        },
+        {
+            "id": "67124eea-95c1-42f7-8dfb-6db24229d248",
+            "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/turkutuuli/128.jpg",
+            "firstName": "Alexandra",
+            "lastName": "Koch",
+            "jobTitle": "Future Accountability Planner",
+            "contactNo": "0496 355 130",
+            "address": "Green Place Siennafurt, South Australia",
+            "age": 37,
+            "bio": "Ex delectus quis ex in optio quia. Alias vitae atque in est omnis eveniet. Enim dolores quibusdam debitis molestias vero amet repellendus. Hic eos voluptas sequi. Earum ut et voluptatem excepturi eius expedita officia quia.",
+            "dateJoined": "2023-12-09T12:35:13.077Z"
+        },
+        {
+            "id": "9c6112eb-f683-4409-8390-35c53165bdc1",
+            "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/vigobronx/128.jpg",
+            "firstName": "Jesse",
+            "lastName": "Harvey",
+            "jobTitle": "Forward Metrics Representative",
+            "contactNo": "0494 328 669",
+            "address": "Howell Square Port Aiden, Northern Territory",
+            "age": 27,
+            "bio": "Earum modi ipsam commodi. Nesciunt ipsam officia et totam. Et odio temporibus asperiores adipisci alias iure voluptatem nisi. Earum consequatur optio. Officiis optio sit dolorem.",
+            "dateJoined": "2022-07-18T23:32:55.185Z"
+        },
+        {
+            "id": "85ffee0a-c9da-4755-a0a8-4f530097ac56",
+            "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/nicoleglynn/128.jpg",
+            "firstName": "Sophie",
+            "lastName": "Langworth",
+            "jobTitle": "Lead Security Executive",
+            "contactNo": "0459 769 698",
+            "address": "Zoe View Rd Ellaside, Western Australia",
+            "age": 52,
+            "bio": "Animi aut quia. Maiores veniam iste quam. Quam qui autem aliquid. Quo quidem necessitatibus dignissimos consequatur quaerat voluptatibus itaque cupiditate suscipit. Velit sunt ducimus et qui ipsam laborum tempore in.",
+            "dateJoined": "2023-08-04T12:39:53.642Z"
+        },
+        {
+            "id": "c5957589-b834-4e2c-9752-774e2264b90a",
+            "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/dixchen/128.jpg",
+            "firstName": "Elizabeth",
+            "lastName": "Cronin",
+            "jobTitle": "Principal Solutions Architect",
+            "contactNo": "0408 637 425",
+            "address": "Olivia Square East Matildaview, Queensland",
+            "age": 44,
+            "bio": "Enim accusamus consequatur maxime quae distinctio voluptatem modi dolorum sequi. Ullam magni autem est et repellat autem excepturi. Voluptas sint beatae tempora dolorem ullam quia libero eos. Itaque dolores dolores voluptatem.",
+            "dateJoined": "2022-01-28T04:02:35.797Z"
+        },
+        {
+            "id": "69634d29-0106-40b1-85c2-34daa45c6a1a",
+            "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/primozcigler/128.jpg",
+            "firstName": "Darcy",
+            "lastName": "Smyth",
+            "jobTitle": "Chief Creative Producer",
+            "contactNo": "0484 885 349",
+            "address": "Sam Junction North Lachlantown, Northern Territory",
+            "age": 18,
+            "bio": "Et illum ea sed qui. Maiores tempora dolores consequatur. Non maxime qui quisquam.",
+            "dateJoined": "2020-11-24T10:35:48.203Z"
+        },
+        {
+            "id": "0215c7cc-7066-4995-9c1f-da0b4b4486c9",
+            "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/de_ascanio/128.jpg",
+            "firstName": "Abby",
+            "lastName": "Harvey",
+            "jobTitle": "Lead Group Executive",
+            "contactNo": "0405 643 871",
+            "address": "Oscar Grove Port Joshua, Northern Territory",
+            "age": 44,
+            "bio": "Qui et et. Exercitationem rerum perferendis. Maxime doloribus beatae dolorum et rem ut neque vel earum. Quia facere inventore voluptatem nisi commodi maxime ut commodi aut.",
+            "dateJoined": "2024-06-11T08:17:17.323Z"
+        }
+    ]
+}
