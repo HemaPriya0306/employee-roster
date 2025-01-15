@@ -6,6 +6,12 @@ body {
   line-height: 1.6;
 }
 
+main {
+  min-height: 100vh;
+  padding: 20px;
+  margin-top: 10vh;
+}
+
 .search-bar {
   text-align: right;
 }

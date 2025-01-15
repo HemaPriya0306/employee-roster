@@ -4,10 +4,12 @@ import { getEmployeesRequest } from './store/slices/employeeInfoSlice';
 import EmployeesList from './components/EmployeesList';
 import "./App.css";
 import EmployeeDetailModal from './components/EmployeeDetailModal';
+import Footer from './components/Footer';
+import Header from './components/Header';
 
 export const App = () => {
   const dispatch = useDispatch();
-  const { company: companyInfo, employees, loading, error } = useSelector((state) => {
+  const { companyInfo, employees, error, loading } = useSelector((state) => {
     console.log(state);
     return state.data.data
   });
@@ -35,16 +37,19 @@ export const App = () => {
 
   return (
     <div className="App">
-      <div className="search-bar">
-        <input
-          type="text"
-          placeholder="Search employees..."
-          value={searchValue}
-          onChange={(e) => setSearchValue(e.target.value)}
-          aria-label="Search employees"
-        />
-      </div>
+      <Header
+        companyInfo={companyInfo}
+      />
       <main id="main-content">
+        <div className="search-bar">
+          <input
+            type="text"
+            placeholder="Search employees..."
+            value={searchValue}
+            onChange={(e) => setSearchValue(e.target.value)}
+            aria-label="Search employees"
+          />
+        </div>
         <EmployeesList
           employees={employees}
           onEmployeeClick={(employee) => handleRowClick(employee)}
@@ -59,6 +64,7 @@ export const App = () => {
           onClose={() => setSelectedEmp(null)}
         />
       )}
+      <Footer />
     </div>
   );
 };
