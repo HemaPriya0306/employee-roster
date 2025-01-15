@@ -1,7 +1,7 @@
 {
   "name": "employee-roster",
   "version": "0.1.0",
-  "homepage": "https://github.com/HemaPriya0306/employee-roster",
+  "homepage": "https://hemapriya0306.github.io/employee-roster/",
   "private": true,
   "dependencies": {
     "@babel/preset-react": "^7.26.3",
