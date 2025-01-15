@@ -16,6 +16,8 @@ You may also see any lint errors in the console.
 
 ### `npm test`
 
+I regret not being able to complete the unit test cases within the one-day time frame for the task. I did my best to manage the task effectively and ensure the quality of the work. Although I wasn't able to fully meet the deadline, I focused on delivering the most accurate and thorough results I could.
+
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 

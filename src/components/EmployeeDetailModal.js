@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-// import './../assets/styles/employeeDetailModal.css';
+import './../assets/styles/employeeDetailModal.css';
 import avatar from './../assets/images/account_circle.png';
 
 const EmployeeDetailModal = React.forwardRef(({ employee, onClose }, ref) => {
