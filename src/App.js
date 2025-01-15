@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getEmployeesRequest } from './store/slices/employeeInfoSlice';
 import EmployeesList from './components/EmployeesList';
 import "./App.css";
+import EmployeeDetailModal from './components/EmployeeDetailModal';
 
 export const App = () => {
   const dispatch = useDispatch();
@@ -12,14 +13,25 @@ export const App = () => {
   });
   const [selectedEmp, setSelectedEmp] = useState(null);
   const [searchValue, setSearchValue] = useState('');
+  const modalRef = useRef();
 
   useEffect(() => {
     console.log("component");
     dispatch(getEmployeesRequest());
-  }, []);
+  }, [dispatch]);
+
+  useEffect(() => {
+    if (selectedEmp && modalRef.current) {
+      modalRef.current.focus();
+    }
+  }, [selectedEmp]);
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error: {error}</p>;
+
+  const handleRowClick = (employee) => {
+    setSelectedEmp(employee);
+  };
 
   return (
     <div className="App">
@@ -35,11 +47,18 @@ export const App = () => {
       <main id="main-content">
         <EmployeesList
           employees={employees}
-          onEmployeeClick={(employee) => setSelectedEmp(employee)}
+          onEmployeeClick={(employee) => handleRowClick(employee)}
           selectedEmp={selectedEmp}
           searchValue={searchValue}
         />
       </main>
+      {selectedEmp && (
+        <EmployeeDetailModal
+          ref={modalRef}
+          employee={selectedEmp}
+          onClose={() => setSelectedEmp(null)}
+        />
+      )}
     </div>
   );
 };

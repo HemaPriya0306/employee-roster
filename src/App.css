@@ -25,6 +25,14 @@ input:focus {
   outline-offset: 2px;
 }
 
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .modal {
+    width: 90%;
+    max-height: 80vh;
+  }
+}
+
 @media (max-width: 480px) {
 
   .search-bar input {

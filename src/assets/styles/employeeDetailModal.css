@@ -1,0 +1,179 @@
+/* employeeDetailModal.css */
+
+/* Modal Overlay */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  /* Modal Container */
+  .modal {
+    background-color: white;
+    border-radius: 8px;
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .profile-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+  }
+  
+  .profile-image {
+    margin-right: 20px;
+  }
+  
+  .profile-image img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .profile-info {
+    text-align: left;
+  }
+  
+  .profile-info h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  
+  .profile-info .age {
+    font-size: 16px;
+    color: #666;
+    margin: 0;
+  }
+  
+  /* Bottom Section - Job Title and Joining Date */
+  .bottom-info {
+    text-align: left;
+    margin-top: 5px;
+  }
+  
+  .job-title {
+    margin: 0;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: #666;
+  }
+  
+  .joining-date {
+    text-align: center;
+    font-size: 14px;
+    color: #888;
+    margin: 5px 0;
+  }
+  
+  #employee-details {
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .modal {
+      padding: 15px;
+      width: 90%;
+    }
+  
+    .profile-image img {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .profile-info h2 {
+      font-size: 20px;
+    }
+  
+    .profile-info .age {
+      font-size: 14px;
+      text-align: center;
+    }
+  
+    .bottom-info .job-title {
+      font-size: 16px;
+    }
+  
+    #employee-details {
+      font-size: 14px;
+    }
+  
+    /* Stack profile section vertically on smaller screens */
+    .profile-header {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .profile-image {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .modal {
+      padding: 10px;
+    }
+  
+    .profile-image img {
+      width: 80px;
+      height: 80px;
+    }
+  
+    .profile-info h2 {
+      font-size: 18px;
+    }
+  
+    .profile-info .age {
+      font-size: 12px;
+    }
+  
+    .bottom-info .job-title {
+      font-size: 14px;
+    }
+  
+    #employee-details {
+      font-size: 12px;
+    }
+  
+    /* Stack profile section vertically on mobile screens */
+    .profile-header {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .profile-image {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
+  
