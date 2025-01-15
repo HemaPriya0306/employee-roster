@@ -5,7 +5,6 @@ import { getEmployeesRequest, getEmployeesFulfilled, getEmployeesFailed } from '
 function* getEmployees() {
   try {
     const response = yield call(axios.get, '/sample-data.json');
-    console.log(response);
     yield put(getEmployeesFulfilled(response.data));
   } catch (error) {
     console.error(error);

@@ -10,8 +10,6 @@ import Header from './components/Header';
 export const App = () => {
   const dispatch = useDispatch();
   const { companyInfo, employees, error, loading } = useSelector((state) => {
-    console.log(state);
-    debugger;
     return state.data.data
   });
   const [selectedEmp, setSelectedEmp] = useState(null);
@@ -19,7 +17,6 @@ export const App = () => {
   const modalRef = useRef();
 
   useEffect(() => {
-    console.log("component");
     dispatch(getEmployeesRequest());
   }, [dispatch]);
 
