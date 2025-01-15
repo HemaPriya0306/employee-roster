@@ -11,6 +11,7 @@ export const App = () => {
   const dispatch = useDispatch();
   const { companyInfo, employees, error, loading } = useSelector((state) => {
     console.log(state);
+    debugger;
     return state.data.data
   });
   const [selectedEmp, setSelectedEmp] = useState(null);

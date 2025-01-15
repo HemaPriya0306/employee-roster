@@ -1,0 +1,96 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EmployeesList component renders with employees and matches snapshot 1`] = `
+<div>
+  <div
+    aria-live="polite"
+    class="emp-list-container"
+  >
+    <table
+      class="emp-table"
+    >
+      <thead>
+        <tr>
+          <th>
+            ID
+          </th>
+          <th>
+            Avatar
+          </th>
+          <th>
+            Name
+          </th>
+          <th>
+            Contact Number
+          </th>
+          <th>
+            Address
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          aria-label="View details for Test User"
+          class=""
+          role="button"
+          tabindex="0"
+        >
+          <td>
+            1
+          </td>
+          <td
+            class="emp-avatar-cell"
+          >
+            <img
+              alt="Test User's avatar"
+              class="emp-avatar"
+              src="account_circle.png"
+            />
+          </td>
+          <td>
+            Test
+             
+            User
+          </td>
+          <td>
+            1234567890
+          </td>
+          <td>
+            123 xyz St
+          </td>
+        </tr>
+        <tr
+          aria-label="View details for Test UserTwo"
+          class=""
+          role="button"
+          tabindex="0"
+        >
+          <td>
+            2
+          </td>
+          <td
+            class="emp-avatar-cell"
+          >
+            <img
+              alt="Test UserTwo's avatar"
+              class="emp-avatar"
+              src="account_circle.png"
+            />
+          </td>
+          <td>
+            Test
+             
+            UserTwo
+          </td>
+          <td>
+            9876543210
+          </td>
+          <td>
+            456 abc St
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
