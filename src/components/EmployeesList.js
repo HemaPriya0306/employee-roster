@@ -2,17 +2,17 @@ import React from 'react';
 import './../assets/styles/employeesList.css';
 import avatar from './../assets/images/account_circle.png';
 
-const EmployeesList = ({ currentEmployees, onEmployeeClick, selectedEmp, searchValue }) => {
+const EmployeesList = ({ currentEmployees, onEmployeeClick, onSortClick, sortConfig, selectedEmp }) => {
   return (
     <div className="emp-list-container" aria-live="polite">
       <table className="emp-table">
         <thead>
           <tr>
-            <th>ID</th>
+            <th onClick={() => onSortClick('id')}>ID {sortConfig.key === 'id' && (sortConfig.direction === 'asc' ? '↑' : '↓')}</th>
             <th>Avatar</th>
-            <th>Name</th>
-            <th>Contact Number</th>
-            <th>Address</th>
+            <th onClick={() => onSortClick('name')}>Name {sortConfig.key === 'name' && (sortConfig.direction === 'asc' ? '↑' : '↓')}</th>
+            <th onClick={() => onSortClick('contactNo')}>Contact Number {sortConfig.key === 'contactNo' && (sortConfig.direction === 'asc' ? '↑' : '↓')}</th>
+            <th onClick={() => onSortClick('address')}>Address {sortConfig.key === 'address' && (sortConfig.direction === 'asc' ? '↑' : '↓')}</th>
           </tr>
         </thead>
         <tbody>

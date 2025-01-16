@@ -16,20 +16,39 @@ export const App = () => {
   const [searchValue, setSearchValue] = useState('');
   const [currentPage, setCurrentPage] = useState(1);  // Current page
   const [employeesPerPage] = useState(5);
+  const [sortConfig, setSortConfig] = useState({ key: 'id', direction: 'asc' });
   const modalRef = useRef();
 
   // Calculate the total number of pages
-  const filteredEmployees = employees?.filter((emp) => emp?.firstName?.toLowerCase().includes(searchValue.toLowerCase()) ||
-    emp?.lastName?.toLowerCase().includes(searchValue?.toLowerCase()));
+  const filteredEmployees = employees?.filter(
+    (emp) => 
+      emp.id?.includes(searchValue) || 
+      emp.firstName?.toLowerCase().includes(searchValue?.toLowerCase()) ||
+      emp.lastName?.toLowerCase().includes(searchValue?.toLowerCase()) || 
+      emp.contactNo?.includes(searchValue) || 
+      emp.address.toLowerCase().includes(searchValue?.toLowerCase())
+  );
 
-  const totalPages = Math.ceil(filteredEmployees?.length / employeesPerPage);
+    // Sort employees based on the sort configuration
+    const sortedEmployees = filteredEmployees && Array.isArray(filteredEmployees) ? [...filteredEmployees].sort((a, b) => {
+      const { key, direction } = sortConfig;
+      const keyVal = key === "name" ? 'firstName' : key;
+        if (a[keyVal] < b[keyVal]) {
+          return direction === 'asc' ? -1 : 1;
+        }else if (a[keyVal] > b[keyVal]) {
+          return direction === 'asc' ? 1 : -1;
+        }
+      return 0;
+    }) : [];
+
+  const totalPages = Math.ceil(sortedEmployees?.length / employeesPerPage);
 
   // Calculate the index of the first and last employee on the current page
   const indexOfLastEmployee = currentPage * employeesPerPage;
   const indexOfFirstEmployee = indexOfLastEmployee - employeesPerPage;
 
   // Slice the employee list to only show the employees for the current page
-  const currentEmployees = filteredEmployees?.slice(indexOfFirstEmployee, indexOfLastEmployee);
+  const currentEmployees = sortedEmployees?.slice(indexOfFirstEmployee, indexOfLastEmployee);
 
   useEffect(() => {
     dispatch(getEmployeesRequest());
@@ -45,6 +64,15 @@ export const App = () => {
     setSearchValue(searchValue);
     setCurrentPage(1);
   }
+
+  // Handle sorting when a column header is clicked
+  const handleSort = (key) => {
+    let direction = 'asc';
+    if (sortConfig.key === key && sortConfig.direction === 'asc') {
+      direction = 'desc';
+    }
+    setSortConfig({ key, direction });
+  };
 
   const handleRowClick = (employee) => {
     setSelectedEmp(employee);
@@ -100,11 +128,12 @@ export const App = () => {
           <EmployeesList
             currentEmployees={currentEmployees}
             onEmployeeClick={(employee) => handleRowClick(employee)}
+            onSortClick={(key) => handleSort(key)}
+            sortConfig={sortConfig}
             selectedEmp={selectedEmp}
-            searchValue={searchValue}
           />
 
-          {currentEmployees && <div className="pagination">
+          {currentEmployees.length > 0 && <div className="pagination">
             <button onClick={handlePrevPage} disabled={currentPage === 1}>Previous</button>
 
             {/* Display page numbers */}
