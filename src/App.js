@@ -9,8 +9,8 @@ import Header from './components/Header';
 
 export const App = () => {
   const dispatch = useDispatch();
-  const { companyInfo, employees, error, loading } = useSelector((state) => {
-    return state.data.data
+  const { data: { companyInfo }, data: { employees }, error, loading } = useSelector((state) => {
+    return state.data
   });
   const [selectedEmp, setSelectedEmp] = useState(null);
   const [searchValue, setSearchValue] = useState('');
@@ -26,8 +26,21 @@ export const App = () => {
     }
   }, [selectedEmp]);
 
-  if (loading) return <p>Loading...</p>;
-  if (error) return <p>Error: {error}</p>;
+  if (loading) {
+    return (
+      <div className="loading-block">
+        <p>Loading...</p>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="error-block">
+        <p>Error: {error}</p>
+      </div>
+    );
+  }
 
   const handleRowClick = (employee) => {
     setSelectedEmp(employee);
